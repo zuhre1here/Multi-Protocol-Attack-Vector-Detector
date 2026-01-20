@@ -15,9 +15,9 @@
 | **Versiyon** | 2.0.0 |
 
 ### 📂 Repo Linki
-<!-- Aşağıdaki linki GitHub/GitLab repo linkinizle değiştirin -->
+
 ```
-https://github.com/kullanici-adi/multi-protocol-ids
+https://github.com/zuhre1here/Multi-Protocol-Attack-Vector-Detector
 ```
 > ⚠️ Yukarıdaki linki kendi repo linkinizle güncelleyin.
 
@@ -47,6 +47,11 @@ https://github.com/kullanici-adi/multi-protocol-ids
 ---
 
 ## 📦 Kurulum
+
+# test
+
+[![test](https://img.youtube.com/vi/aAzxkVCCzoY/0.jpg)](https://www.youtube.com/watch?v=aAzxkVCCzoY)
+
 
 ### 1. Projeyi İndir
 ```bash
