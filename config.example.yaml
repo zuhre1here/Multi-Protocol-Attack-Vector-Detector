@@ -1,0 +1,33 @@
+# IDS Örnek Config Dosyası
+# ========================
+# Kullanım: python3 -m ids.main --config config.yaml
+
+capture:
+  mode: demo          # demo, pcap, proxy, log
+  interface: any      # eth0, wlan0, lo, any
+  ports:
+    - 80
+    - 443
+    - 8080
+    - 8888
+  host: "127.0.0.1"   # 0.0.0.0 = tüm interface'ler
+  log_files: []       # ["/var/log/nginx/access.log"]
+  log_format: auto    # auto, nginx, apache, apache_common
+  watch: false        # true = tail -f modu
+
+output:
+  format: text        # text, json, csv
+  log_dir: null       # null = mevcut dizin
+  log_file: security_events.log
+  verbose: 0          # 0-3 (0=normal, 3=çok detaylı)
+
+detection:
+  enabled_detectors:
+    - sqli
+    - xss
+    - complexity
+    - protocol
+  sqli_sensitivity: high    # low, medium, high
+  xss_sensitivity: high
+  max_query_depth: 10       # GraphQL derinlik limiti
+  max_aliases: 50           # GraphQL alias limiti
